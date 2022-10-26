@@ -162,7 +162,7 @@ letter-spacing: 0.05rem;
 	background-color: #24593f;
 	color: white;
 	border: 0.15rem solid #24593f;
-	border-radius: 5%;
+	border-radius: 3.125rem;
 	/* text-align: center; */
 	/* display: flex;
 	justify-content: center; */
@@ -170,6 +170,158 @@ letter-spacing: 0.05rem;
 	margin-left: 4.6rem;
 	font-size: 1.4rem;
 }
+.shop {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	
+}
+/* buttons */
+#coffee-shopping-btn {
+	background-color: #24593f;
+	color: white;
+	border: 0.15rem solid #24593f;
+}
+#milkshakes-shopping-btn {
+
+	background-color: #24593f;
+	color: white;
+	border: 0.15rem solid #24593f;
+
+}
+#snacks-shopping-btn {
+	background-color: #24593f;
+	color: white;
+	border: 0.15rem solid #24593f;
+}
+.shopping-buttons {
+	font-size: 0.9rem;
+	padding: 0.35rem;
+	border-radius: 3.125rem;
+}
+
+/* end of btn  */
+.shop div{
+	/* margin: 1.7rem 0rem; */
+}
+/* shopping sections 3 */
+.coffee {
+	float: left;
+	width: 40%;
+	background-color: pink;
+	height: 91.5vh;
+}
+.alternatives {
+	float: left;
+	width: 35%;
+	background-color: palevioletred;
+	height: 91.5vh;
+}
+.snacks {
+	float: right;
+	width: 25%;
+	background-color: #b53678;
+	height: 91.5vh;
+}
+.shop-title {
+	font-size: 2rem;
+	color: #24593f;
+	padding: 1rem;
+	letter-spacing: 0.05rem;
+}
+#coffee-small {
+	color: black;
+	font-size: 1rem;
+	font-weight: 600;
+}
+#coffee-big {
+	font-size: 2.5rem;
+}
+.shop-images {
+	height: 50%;
+	width: 75%;
+	object-fit:cover;
+}
+.words {
+	margin: 1.4rem;
+	letter-spacing: 0.04rem;
+	text-align: left;
+	line-height: 1.3rem;
+}
+/* about */
+.about {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	
+
+}
+.who-we-are {
+	float: left;
+	width: 33%;
+	background-color: blueviolet;
+	height: 91.5vh;
+	text-align: center;
+	justify-content: center;
+}
+.founding-and-statement {
+	float: left;
+	width: 34%;
+	background-color: royalblue;
+	height: 91.5vh;
+}
+.goals {
+	float: left;
+	width: 33%;
+	height: 91.5vh;
+	background-color: blue;
+	justify-content: center;
+}
+#who-we-are-words {
+	display: flex;align-items: center;
+	height: 65vh;
+	background-color: #b53678;
+	/* margin: 1rem; */
+	/* justify-content: center; */
+	
+
+}
+#who-we-are-image {
+	height: 26.5vh;
+	background-color: white;
+}
+#founding-words {
+	display: flex;align-items: center;
+	height: 25vh;
+	background-color: aqua;
+}
+#founding-and-statement-image {
+	height: 41.5vh;
+	color: azure;
+}
+#statement-words {
+	display: flex;align-items: center;
+	height: 25vh;
+	background-color: yellow;
+}
+#about-goals-words {
+	display: flex;align-items: center;
+	height: 45.75vh;
+	background-color: pink;
+}
+#about-goals-image {
+	height: 45.75vh;
+	background-color: #f5deb3;
+}
+.about-words {
+	display: flex;align-items: center;
+	/* display: flex; */
+	/* justify-content: center; */
+}
+
+/* about end  */
 html{
 	background-color: red;
 }
