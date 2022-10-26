@@ -313,7 +313,8 @@ letter-spacing: 0.05rem;
 }
 #about-goals-image {
 	height: 45.75vh;
-	background-color: #f5deb3;
+	background-image: url('resources/images/C402D4DE-5CEF-4C38-A9CD-2580B068A89D.jpeg');
+
 }
 .about-words {
 	display: flex;align-items: center;
