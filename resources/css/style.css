@@ -80,15 +80,15 @@ letter-spacing: .06rem;
 
 /* home */
 .home {
-	background-color: #f5deb3;
+	/* background-color: #f5deb3; */
 	min-height: 91.4vh;
 	display: flex;
 	align-items: center;
 	/* padding-top: 3.4rem; */
 	/* border: 0.2rem solid black; */
 	margin-top: 8.6vh;
-	
-	
+	/* background-image: url('C402D4DE-5CEF-4C38-A9CD-2580B068A89D.jpeg'); */
+	border-bottom: 0.1vh solid black;
 
 }
 #left-box {
@@ -114,6 +114,10 @@ letter-spacing: 0.05rem;
 	font-weight: 500;
 	font-family: 'Times New Roman', Times, serif;
 	letter-spacing: 0.05rem;
+}
+#slogan {
+	color: #24593f;
+	font-size: 1rem;
 }
 
 #middle-box {
@@ -175,6 +179,7 @@ letter-spacing: 0.05rem;
 	align-items: center;
 	text-align: center;
 	justify-content: center;
+	border-bottom: 0.1vh solid black;
 	
 }
 /* buttons */
@@ -211,6 +216,7 @@ letter-spacing: 0.05rem;
 	width: 40%;
 	background-color: pink;
 	height: 91.5vh;
+	/* border-left: 0.1vh solid black; */
 }
 .alternatives {
 	float: left;
@@ -255,76 +261,110 @@ letter-spacing: 0.05rem;
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-	
+	border-bottom: 0.1vh solid black;
 
 }
 .who-we-are {
 	float: left;
 	width: 33%;
-	background-color: blueviolet;
-	height: 91.5vh;
+	/* background-color: blueviolet; */
+	height: 91.4vh;
 	text-align: center;
 	justify-content: center;
+	border-right: 0.1vh solid black;
 }
 .founding-and-statement {
 	float: left;
 	width: 34%;
-	background-color: royalblue;
-	height: 91.5vh;
+	/* background-color: royalblue; */
+	height: 91.4vh;
+	border-right: 0.1vh solid black;
 }
 .goals {
 	float: left;
 	width: 33%;
-	height: 91.5vh;
-	background-color: blue;
+	height: 91.4vh;
+	/* background-color: blue; */
 	justify-content: center;
+	
 }
 #who-we-are-words {
 	display: flex;align-items: center;
 	height: 65vh;
-	background-color: #b53678;
+	/* background-color: #b53678; */
 	/* margin: 1rem; */
 	/* justify-content: center; */
-	
+	border-bottom: 0.1vh solid black;
+	/* border-right: 0.1vh solid black; */
+	/* border-top: 0.1vh solid black; */
+
 
 }
 #who-we-are-image {
-	height: 26.5vh;
-	background-color: white;
+	/* height: 26.3vh; */
+}
+#who-we-are-image img{
+	height: 26.2vh;
+	object-fit: cover;
+	width: 100%;
 }
 #founding-words {
 	display: flex;align-items: center;
 	height: 25vh;
-	background-color: aqua;
+	/* border-top: 0.1vh solid black; */
+	border-bottom: 0.1vh solid black;
+	/* border-right: 0.1vh solid black; */
 }
-#founding-and-statement-image {
-	height: 41.5vh;
-	color: azure;
+#founding-and-statement-image img{
+	height: 41.4vh;
+	/* height: fit-content; */
+	object-fit: cover;
+	width: 100%;
+	border-bottom: 0.1vh solid black;
 }
 #statement-words {
 	display: flex;align-items: center;
 	height: 25vh;
-	background-color: yellow;
+	/* border-right: 0.1vh solid black;
+	border-top: 0.1vh solid black; */
 }
 #about-goals-words {
 	display: flex;align-items: center;
 	height: 45.75vh;
-	background-color: pink;
+	border-bottom: 0.1vh solid black;
 }
-#about-goals-image {
-	height: 45.75vh;
-	background-image: url('resources/images/C402D4DE-5CEF-4C38-A9CD-2580B068A89D.jpeg');
-
+#about-goals-image img{
+	height: 45.65vh;
+	/* background-image: url(resources\images\C402D4DE-5CEF-4C38-A9CD-2580B068A89D.jpeg); */
+object-fit: cover;
+width: 100%;
 }
 .about-words {
 	display: flex;align-items: center;
 	/* display: flex; */
 	/* justify-content: center; */
 }
+.about img{
+	opacity: 0.8;
+}
+.about p {
+	color: black;
+	padding: 0 1.5rem;
+	letter-spacing: 0.03rem;
+	font-size: 1rem;
+}
+.about h1 {
+	color: #24593f;
+	font-size: 2rem;
+	border: 0.5vh solid white;
+	border-radius: 50%;
+	padding: 1rem;
+	margin-left: 1rem;
+}
 
 /* about end  */
 html{
-	background-color: red;
+	background-color: #f5deb3;
 }
 
 
