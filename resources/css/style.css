@@ -57,7 +57,7 @@ table {
 	justify-content: space-between;
 	padding: 0rem 3rem;
 	height: 8.5vh;
-	position: fixed;
+	position: sticky;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -65,6 +65,7 @@ table {
 	/* border-bottom: var(--border); */
 	border-bottom: 0.1vh solid black;
 	/* border-style: solid; */
+	opacity: 1;
 }
 
 .header .logo img{
@@ -118,6 +119,8 @@ letter-spacing: 0.05rem;
 #slogan {
 	color: #24593f;
 	font-size: 1rem;
+	font-weight: 530;
+	letter-spacing: 0.03rem;
 }
 
 #middle-box {
@@ -130,8 +133,8 @@ letter-spacing: 0.05rem;
 	justify-content: center;
 
 }
-#oval {
-}
+/* #oval { */
+/* } */
 .image #oval img{
 	width: 300px;
 	height: auto;
@@ -207,9 +210,9 @@ letter-spacing: 0.05rem;
 }
 
 /* end of btn  */
-.shop div{
+/* .shop div{ */
 	/* margin: 1.7rem 0rem; */
-}
+/* } */
 /* shopping sections 3 */
 .coffee {
 	float: left;
@@ -300,9 +303,9 @@ letter-spacing: 0.05rem;
 
 
 }
-#who-we-are-image {
+/* #who-we-are-image { */
 	/* height: 26.3vh; */
-}
+/* } */
 #who-we-are-image img{
 	height: 26.2vh;
 	object-fit: cover;
@@ -344,9 +347,10 @@ width: 100%;
 	/* display: flex; */
 	/* justify-content: center; */
 }
-.about img{
-	opacity: 0.8;
-}
+/* .about img{ */
+	/* The header also became opaque when it overlapped the images */
+	/* opacity: 0.8; */
+/* } */
 .about p {
 	color: black;
 	padding: 0 1.5rem;
@@ -366,10 +370,87 @@ width: 100%;
 /* footer beginning */
 
 .footer {
-	background-color: #24262b;
+	/* background-color: #24262b; */
+	background-color: #24593f;
+	padding: 2rem;
+	/* height: 7rem; */
 }
+.container {
+	margin: auto;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-column {
+	width: 25%;
+	/* padding: 0 0.1em; */
+}
+.footer-column h4{
+	font-size: 1.5rem;
+	color: #f5deb3;
+	text-transform: capitalize;
+	font-weight: 500;
+	margin-bottom: 0.7rem;
+	letter-spacing: 0.05rem;
+	position: relative;
+	
+}
+/* ???? */
+/* .footer-column h4::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -1rem;
+	background-color: #e91e63;
+	height: 0.1rem;
+	box-sizing: border-box;
+	width: 2rem;
 
+} */
+.footer-column ul li:not(:last-child) {
+	margin-bottom: 1rem;
+}
+.footer-column ul li a{
+	color: black;
+	font-size: 1rem;
+	text-transform: capitalize;
+	display: block;
+}
+.footer-column ul li a:hover{
+	color: black;
+	padding-left: 0.5rem;
+	/* text-decoration: underline; */
+}
+.footer-column .social-links a{
+	display: inline-block;
+	height: 2rem;
+	width: 2rem;
+	background-color: transparent;
+	color: white;
+
+}
+.footer p{
+	color: white;
+	font-size: 0.7rem;
+	font-weight: 100;
+}
+/* .footer .copyright {
+	margin-top: 3rem;
+} */
+/* .footer-column .social-links a:hover {
+} */
+/* responsive  */
+@media(max-widht:767px){
+	.footer-column {
+		width: 50%;
+		margin-bottom: 2rem;
+		/* padding: 0 1rem; */
+	}
+
+}
 /* footer end  */
+
 html{
 	background-color: #f5deb3;
 }
