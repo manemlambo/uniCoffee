@@ -363,6 +363,13 @@ width: 100%;
 }
 
 /* about end  */
+/* footer beginning */
+
+.footer {
+	background-color: #24262b;
+}
+
+/* footer end  */
 html{
 	background-color: #f5deb3;
 }
