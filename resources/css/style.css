@@ -45,39 +45,172 @@ table {
 
 /* coding */
 /* @import url(-url of font-); */
+
 *{
 	text-decoration: none;
-	
+	background-color: #f5deb3;
 }
-.header{
-	/* background: var(--bg); */
+/* header  */
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: transparent;
+	border-bottom: 0.1rem solid black;
+}
+.logo {
+ color: #24593f;
+ text-transform: uppercase;
+ letter-spacing: 0.2rem;
+ font-size: 1.2rem;
+ font-weight: 700;
+}
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	width: 25%;
+}
+.nav-links a{
+	color: #24593f;
+	letter-spacing: 00.2rem;
+	font-weight: 600;
+	font-size: 1rem;
+
+}
+/* responsive part starts */
+.burger {
+	display: none;
+	/* (add-on)  */
+	cursor: pointer;
+}
+.burger div {
+	width: 1.5rem;
+	height: 0.2rem;
+	background-color: #24593f;
+	margin: 0.3rem;
+	transition: all 0.3s ease;
+}
+/* changing space between */
+@media (max-width: 1024px) {
+.nav-links{
+	width: 60%;
+}
+}
+@media  (max-width:768px) {
+	body {
+		/* remove scrolling caused by translating off screen  */
+		overflow-x: hidden;
+	}
+	.nav-links {
+		position: absolute;
+		right: 0;
+		height: 92vh;
+		top:8vh;
+		background-color: #24593f;
+		display: flex;
+		flex-direction: column;
+		/* order changes because flex-direction changed  */
+		align-items: center;
+		width: 40%;
+		/* moves it off the screen  */
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+.nav-links a {
+	color: white;
+	background-color: #24593f;
+}
+	.nav-links li{
+		opacity: 0;
+	}
+.burger {
+	/* show burger when in mobile  */
+	display: block;
+}
+}
+/* want navigation to show when we click on burger  */
+.nav-active {
+	transform: translateX(0%);
+}
+
+/* animate burger stuff in  */
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+opacity: 0;
+}
+.toggle .line3 {
+	transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* responsive ends  */
+
+
+
+
+
+/* end of header  */
+/* .header{
 	background-color: #f5deb3;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 0rem 3rem;
-	height: 8.5vh;
-	position: sticky;
+    max-height: 3rem;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	/* z-index: 1000; */
-	/* border-bottom: var(--border); */
-	border-bottom: 0.1vh solid black;
-	/* border-style: solid; */
+	z-index: 1000;
+	border-bottom: 0.1rem solid black;
 	opacity: 1;
+} */
+/* phone only  */
+@media (max-width:599px) {
+	.header {
+		color: red;
+	}
 }
+/* tablet portrait */
+@media (min-width: 600px) {
 
-.header .logo img{
-	height: 2.5rem;
 }
-.header .navbar a{
+/* tablet landscape  */
+@media (min-width: 900px) {
+
+}
+/* desktop  */
+@media (min-width: 1200px) {
+
+}
+/* big desktop  */
+/* @media (min-width: 1800px) { */
+/* } */
+
+
+/* .header .logo img{
+	height: 2.5rem;
+} */
+/* .header .navbar a{
 	margin: 0 1.2rem;
 	font-size: 1rem;
 	color: #24593f;
 font-weight: 600;
 letter-spacing: .06rem;
-}
+} */
 
 /* home */
 .home {
@@ -87,15 +220,15 @@ letter-spacing: .06rem;
 	align-items: center;
 	/* padding-top: 3.4rem; */
 	/* border: 0.2rem solid black; */
-	margin-top: 8.6vh;
+	margin-top: 3rem;
 	/* background-image: url('C402D4DE-5CEF-4C38-A9CD-2580B068A89D.jpeg'); */
-	border-bottom: 0.1vh solid black;
+	border-bottom: 0.1rem solid black;
 
 }
 #left-box {
 	float: left;
-	width: 32%;
-	height: 200px;
+	max-width: 32%;
+	max-height: 200px;
 	/* border: 0.124rem solid black; */
 	text-align: left;
 	padding-left: 1rem;
@@ -347,10 +480,10 @@ width: 100%;
 	/* display: flex; */
 	/* justify-content: center; */
 }
-/* .about img{ */
+.about img{
 	/* The header also became opaque when it overlapped the images */
-	/* opacity: 0.8; */
-/* } */
+	opacity: 0.8;
+}
 .about p {
 	color: black;
 	padding: 0 1.5rem;
